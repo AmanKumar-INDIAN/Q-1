@@ -341,3 +341,120 @@ function checknum(first,secend){
 }
 
 console.log(checknum(10,10))
+
+
+/**
+ * 17 Question 
+ * 
+ 
+
+//////////////--------------------****************************-----------------///////////////////////
+*/
+
+
+function defrence(n){
+    if(n <=19){
+        return 19-n
+    }else{
+        return (n-19)*3
+    }
+}
+console.log(defrence(5))
+
+
+
+
+
+/**
+ * 18 Question 
+ * 
+ 
+
+//////////////--------------------****************************-----------------///////////////////////
+*/
+
+
+
+function checkk(n){
+    return (Math.abs((100-n)<=20)||Math.abs((400-n)<=20))
+}
+console.log(checkk(9))
+
+
+
+/**
+ * 19 Question 
+ * 
+ 
+
+//////////////--------------------****************************-----------------///////////////////////
+*/
+
+
+
+function checkNagitave(x,y){
+ if((x>0 && y<0)||(x<0&&y> 0)){
+    return true;
+ }else{
+    return false
+ }
+}
+
+console.log(checkNagitave(2,2))
+console.log(checkNagitave(-2,2))
+console.log(checkNagitave(2,-2))
+console.log(checkNagitave(-2,-2))
+
+
+
+/**
+ * 20 Question 
+ * 
+ 
+
+//////////////--------------------****************************-----------------///////////////////////
+*/
+
+
+
+
+function checks(x){
+    if(x===null||x===undefined||x.substring(0,2)==="py"){
+        return x
+    }else{
+        return "py"+x
+    }
+}
+
+console.log(checks("pyotone"))
+
+
+/**
+ * 21 Question 
+ * 
+ 
+
+//////////////--------------------****************************-----------------///////////////////////
+*/
+
+
+
+
+function rev(x){
+    let a= Array.from(x)
+   let b= a.reverse()
+   let c=b.join("")
+   return c.toString()
+}
+console.log(rev("hello i ama aman"))
+/**OR */
+function st(xx){
+    if(xx===null||xx===undefined||xx.length<=1){
+        return xx
+    }else{
+        let carr= xx.substring(1,xx.length-1);
+        let re=(xx.charAt(xx.length-1)+carr+xx.charAt(0))
+        console.log(re)
+    }
+}
+st("animal")
